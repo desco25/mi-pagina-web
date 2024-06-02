@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>ejemplo de formularios</h1>
+    <form action="" method="">
+<fieldset>
+<legend>
+    Datos de usuario
+</legend>
+<p><label>usuario<input type="text" name="" id=""></label></p>
+<p><label>contraseña<input type="password" name="" id=""></label></p>
+</fieldset>
+<fieldset>
+    <legend>
+        Datos Personales
+    </legend>
+    <p>los campos con(*)son obligatorios</p>
+    <p><label>nombre y apellido<input type="text" name="" id=""></label></p>
+    <p><label>direccion de correo<input type="email" placeholder="nombre@info.com"></label></p>
+    <p><label>fecha de nacimiento <input type="date"></label></p>
+    <p><label >edad <input type="number"></label></p>
+    <input type="submit" name="">
+    </fieldset>
+    <fieldset>
+        <legend>
+            pasatiempos
+        </legend>
+        <p><label ><input type="checkbox" >Voley</label></p>
+        <p><label ><input type="checkbox" >futbol</label></p>
+        <p><label ><input type="checkbox" >cine</label></p>
+        <p><label ><input type="checkbox" >musica</label></p>
+        <p><label ><input type="checkbox" >leer</label></p>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Genero
+            </legend>
+            <label ><input type="radio" name="genero" >hombre</label>
+            <label ><input type="radio" name="genero">mujer</label>
+            <label ><input type="radio" name="genero">prefiero no decirlo</label>
+           
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Ejemplos de select y opciones 
+                </legend>
+                <select name="pais">
+                    <optgroup label="america">
+<option value="bo">Bolivia</option>
+<option value="pe">Peru</option>
+<option value="cl">Chile</option>
+<option value="co">Colombia</option>
+</optgroup>
+<optgroup label="europa">
+    <option value="it">italia</option>
+    <option value="es">españa</option>
+  
+    </optgroup>
+
+                </select>
+                <textarea name="mensaje" cols="20" rows="7" placeholder="escribe un mensaje"></textarea>
+                
+               
+                </fieldset>
+                <fieldset>
+                    <legend>fechas</legend>
+                    <p><label>fecha con rangos <input type="date" min="2024-03-20" max="2024-03-22"></label></p>
+                    <p><label>mes <input type="month"></label></p>
+                    <p><label>semana <input type="week"></label></p>
+                    <p><label>hora <input type="time"></label></p>
+                    <p><label>fecha y hora local <input type="datetime-local"></label></p>
+                </fieldset>
+    </form>
+    <fieldset>
+        <legend>numeros</legend>
+        <p><label >numero <input type="number" min="0" max="20" step="2" name="numero"></label></p>
+        <input type="range" min="0" max="20" step="2"/>
+    </fieldset>
+    <hr>
+    
+       <form oninput="suma.value=parseInt(num1.value)+parseInt(num2.value)">
+    <fieldset>
+<legend>suma de dos numeros</legend>
+<label >
+<input type="number" id="num1"><span>+</span>
+<input type="number" id="num2"><span>=</span>
+</label>
+<output name="suma" id="sum" for="num1 num2"></output>
+
+    </fieldset>
+    
+    
+    </form>
+    
+        
+
+    
+    <form oninput="sumar.value=parseInt(nume1.value)+parseInt(nume2.value)+parseInt(nume3.value)">
+        <fieldset>
+    <legend>suma de tres numeros</legend>
+    <label >
+    <input type="number" id="nume1"><span>+</span>
+    <input type="number" id="nume2"><span>+</span>
+    <input type="number" id="nume3"><span>=</span>
+    </label>
+    <output name="sumar" id="sum" for="nume1 nume2 nume3"></output>
+    
+        </fieldset>
+        
+        
+        </form>
+</body>
+</html>
